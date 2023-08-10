@@ -18,6 +18,9 @@ class Agency extends Model
         'created_at',
         'updated_at',
     ];
+    protected $hidden = [
+        'updated_at', 'deleted_at', 'number_ip'
+    ];
     public function projects(): HasMany {
         return $this->hasMany(Project::class, 'id_agency');
     }

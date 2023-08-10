@@ -20,8 +20,9 @@ class Project extends Model
         'star_end',
         'user_register',
         'number_ip',
-        'created_at',
-        'updated_at',
+    ];
+    protected $hidden = [
+        'updated_at', 'deleted_at', 'number_ip'
     ];
     public function agency(): BelongsTo {
         return $this->belongsTo(Agency::class, 'id_agency');

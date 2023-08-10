@@ -83,9 +83,11 @@ return [
     | by the translation service provider. You are free to set this value
     | to any of the locales which will be supported by the application.
     |
+    https://codersfree.com/posts/traduce-tus-aplicaciones-laravel-al-espanol
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
+    
 
     /*
     |--------------------------------------------------------------------------
